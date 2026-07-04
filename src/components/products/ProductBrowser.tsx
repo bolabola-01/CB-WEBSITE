@@ -93,7 +93,7 @@ export default function ProductBrowser({ products, categories }: ProductBrowserP
       ) : (
         <div className="border border-line p-10 text-center text-sm text-ink-soft">
           No products match your search. Try a different term, or contact us directly —
-          our full range extends beyond what's listed here.
+          our full range extends beyond what&apos;s listed here.
         </div>
       )}
 

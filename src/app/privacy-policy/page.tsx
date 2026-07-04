@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p>
             This website does not collect personal information through on-site forms. Instead,
-            "Request a Quotation" and similar buttons open WhatsApp with a pre-filled message.
+            &quot;Request a Quotation&quot; and similar buttons open WhatsApp with a pre-filled message.
             Any information you share happens directly inside your conversation with our
             marketing team on WhatsApp, which is operated by Meta and governed by{" "}
             <a
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
               rel="noopener noreferrer"
               className="text-terracotta-500 underline"
             >
-              WhatsApp's own privacy policy
+              WhatsApp&apos;s own privacy policy
             </a>
             .
           </p>

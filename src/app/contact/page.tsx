@@ -23,11 +23,11 @@ export default function ContactPage() {
       <section className="container max-w-8xl py-20">
         <SectionEyebrow number="01" label="Contact Us" className="mb-8" />
         <h1 className="headline text-4xl md:text-5xl max-w-2xl mb-6">
-          Let's Talk About Your Requirements.
+          Let&apos;s Talk About Your Requirements.
         </h1>
         <p className="text-sm md:text-base text-ink-soft leading-relaxed max-w-2xl mb-14">
           The fastest way to reach us is WhatsApp — message one of our marketing
-          representatives directly and we'll follow up with product options, minimum order
+          representatives directly and we&apos;ll follow up with product options, minimum order
           quantities, and lead times.
         </p>
 

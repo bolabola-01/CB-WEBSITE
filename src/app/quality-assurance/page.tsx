@@ -86,7 +86,7 @@ export default function QualityAssurancePage() {
                 Quality Standards That Keep Evolving.
               </h2>
               <p className="text-sm md:text-base text-ink-soft leading-relaxed mb-4">
-                Our commitment to quality isn't fixed at a single standard — we review
+                Our commitment to quality isn&apos;t fixed at a single standard — we review
                 processes, materials, and touchpoints on an ongoing basis to keep pace with
                 what hospitality operators expect.
               </p>

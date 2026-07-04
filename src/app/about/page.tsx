@@ -95,7 +95,7 @@ export default function AboutPage() {
               serviced residences.
             </p>
             <p className="text-sm md:text-base text-ink-soft leading-relaxed">
-              Every product we produce is engineered around your brand's specifications — from
+              Every product we produce is engineered around your brand&apos;s specifications — from
               material selection and finish to packaging design and logo placement. We serve a
               range of hospitality segments including hotels, boutique resorts, private villas,
               serviced apartments, and healthcare facilities, with production planning that

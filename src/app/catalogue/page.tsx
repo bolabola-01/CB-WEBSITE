@@ -32,9 +32,9 @@ export default function CataloguePage() {
             options for each category.
           </p>
           <p className="text-sm md:text-base text-ink-soft leading-relaxed mb-8">
-            Message one of our marketing representatives on WhatsApp and we'll send the
+            Message one of our marketing representatives on WhatsApp and we&apos;ll send the
             current catalogue PDF directly in the chat, along with an introductory quotation
-            for the products you're interested in.
+            for the products you&apos;re interested in.
           </p>
           <div className="border border-line p-6 flex items-start gap-4">
             <FileText className="h-6 w-6 text-terracotta-500 shrink-0" />
@@ -47,7 +47,7 @@ export default function CataloguePage() {
                 <a href={`mailto:${BRAND.email}`} className="text-terracotta-500 underline">
                   {BRAND.email}
                 </a>{" "}
-                and we'll send the catalogue right away.
+                and we&apos;ll send the catalogue right away.
               </p>
             </div>
           </div>
