@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f4ee;
+  color: #1e2530;
+}
+
+@layer components {
+  /* Small-caps eyebrow label used above section headlines throughout
+     the catalogue, e.g. "01 — ABOUT CV CALTIC BARU" */
+  .eyebrow {
+    @apply font-label text-[11px] md:text-xs tracking-widest2 uppercase text-terracotta-500 font-medium;
+  }
+
+  /* Editorial italic display headline */
+  .headline {
+    @apply font-display italic text-navy-700 leading-[1.08];
+  }
+
+  /* Thin hairline divider, as seen under section eyebrows */
+  .hairline {
+    @apply border-t border-line;
+  }
+
+  .terracotta-tick {
+    @apply block h-[2px] w-8 bg-terracotta-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-navy-700 text-paper px-7 py-3.5 text-sm font-medium tracking-wide uppercase transition-colors duration-200 hover:bg-terracotta-500;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-navy-700 text-navy-700 px-7 py-3.5 text-sm font-medium tracking-wide uppercase transition-colors duration-200 hover:bg-navy-700 hover:text-paper;
+  }
+
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center gap-2 border border-paper/60 text-paper px-7 py-3.5 text-sm font-medium tracking-wide uppercase transition-colors duration-200 hover:bg-paper hover:text-navy-700;
+  }
+
+  .card-bordered {
+    @apply border border-line bg-paper p-8 transition-shadow duration-200 hover:shadow-card;
+  }
+}
