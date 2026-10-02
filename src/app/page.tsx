@@ -9,6 +9,7 @@ import ProductCategoryGrid from "@/components/sections/ProductCategoryGrid";
 import ProductCard from "@/components/products/ProductCard";
 import IndustriesGrid from "@/components/sections/IndustriesGrid";
 import ClientsSection from "@/components/sections/ClientsSection";
+import BrandedAmenitiesSection from "@/components/sections/BrandedAmenitiesSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import CTASection from "@/components/sections/CTASection";
 import { getProductCategories, getFeaturedProducts, getIndustries, getTestimonials } from "@/lib/content";
@@ -210,9 +211,11 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <BrandedAmenitiesSection />
+
       {/* Clients */}
       <section className="container max-w-8xl py-20">
-        <SectionEyebrow number="07" label="Our Clients" className="mb-8" />
+        <SectionEyebrow number="08" label="Our Clients" className="mb-8" />
         <h2 className="headline text-3xl md:text-4xl mb-10">Trusted by Hospitality Brands.</h2>
         <ClientsSection />
       </section>

@@ -37,11 +37,15 @@ export default function Header({ siteSettings, productCategories }: HeaderProps)
 
   return (
     <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur-sm border-b border-line">
-      <div className="container max-w-8xl flex items-center justify-between gap-6 h-20">
+      {/* The header needs more horizontal room than the site's standard
+          "container" (capped at 1360px at the 2xl breakpoint) allows once
+          this many nav items are present, so it gets its own wider cap
+          rather than widening "container" everywhere else on the site. */}
+      <div className="mx-auto w-full max-w-[1650px] px-6 flex items-center justify-between gap-6 h-20">
         <Logo />
 
         {/* Desktop nav */}
-        <nav className="hidden 2xl:flex items-center gap-6">
+        <nav className="hidden min-[1650px]:flex items-center gap-6">
           {mainNav.map((item) => (
             <div
               key={item.href}
@@ -73,7 +77,7 @@ export default function Header({ siteSettings, productCategories }: HeaderProps)
           ))}
         </nav>
 
-        <div className="hidden 2xl:flex items-center gap-4 shrink-0">
+        <div className="hidden min-[1650px]:flex items-center gap-4 shrink-0">
           <a
             href={`tel:${siteSettings.officeLandlineTel}`}
             className="flex items-center gap-1.5 text-sm text-navy-700"
@@ -87,7 +91,7 @@ export default function Header({ siteSettings, productCategories }: HeaderProps)
         </div>
 
         <button
-          className="2xl:hidden text-navy-700"
+          className="min-[1650px]:hidden text-navy-700"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
@@ -97,7 +101,7 @@ export default function Header({ siteSettings, productCategories }: HeaderProps)
 
       {/* Mobile nav */}
       {open && (
-        <div className="2xl:hidden border-t border-line bg-paper max-h-[80vh] overflow-y-auto">
+        <div className="min-[1650px]:hidden border-t border-line bg-paper max-h-[80vh] overflow-y-auto">
           <nav className="container py-4 flex flex-col">
             {mainNav.map((item) => (
               <div key={item.href} className="border-b border-line/70 last:border-none">

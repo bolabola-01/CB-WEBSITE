@@ -25,7 +25,11 @@ export function HeroFullBleed({
   return (
     <section className="relative h-[86vh] min-h-[560px] w-full overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={imageUrl} alt={imageAlt} className="absolute inset-0 h-full w-full object-cover" />
+      <img
+        src={imageUrl}
+        alt={imageAlt}
+        className="absolute inset-0 h-full w-full object-cover animate-kenburns"
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-900/35 to-navy-900/10" />
       <div className="relative z-10 h-full container max-w-8xl flex flex-col items-center justify-center text-center px-6">
         {eyebrow && (

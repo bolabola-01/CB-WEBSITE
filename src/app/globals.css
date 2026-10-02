@@ -48,3 +48,24 @@ body {
     @apply border border-line bg-paper p-8 transition-shadow duration-200 hover:shadow-card;
   }
 }
+
+/* Slow, subtle zoom/pan used on full-bleed hero photography to read as
+   gentle motion without requiring a real video file. */
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1%, -1%);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 22s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-kenburns {
+    animation: none;
+  }
+}

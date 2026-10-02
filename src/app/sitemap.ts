@@ -16,6 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/manufacturing",
     "/oem-private-label",
+    "/branded-amenities",
     "/quality-assurance",
     "/industries",
     "/products",

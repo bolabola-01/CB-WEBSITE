@@ -35,6 +35,7 @@ export const PRIMARY_NAV = [
   { label: "Products", href: "/products" },
   { label: "Manufacturing", href: "/manufacturing" },
   { label: "OEM & Private Label", href: "/oem-private-label" },
+  { label: "Branded Amenities", href: "/branded-amenities" },
   { label: "Quality Assurance", href: "/quality-assurance" },
   { label: "Catalogue", href: "/catalogue" },
   { label: "FAQ", href: "/faq" },
@@ -46,6 +47,7 @@ export const FOOTER_NAV = {
     { label: "About", href: "/about" },
     { label: "Manufacturing", href: "/manufacturing" },
     { label: "OEM & Private Label", href: "/oem-private-label" },
+    { label: "Branded Amenities", href: "/branded-amenities" },
     { label: "Quality Assurance", href: "/quality-assurance" },
   ],
   resources: [
