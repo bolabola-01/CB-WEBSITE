@@ -83,10 +83,10 @@ export default function BrandedAmenitiesPage() {
         </div>
       </section>
 
-      {/* Maison Solène — Caltic Baru's own exclusive line */}
+      {/* Maison Solène — separate brand, exclusive to Caltic Baru */}
       <section className="bg-paper-warm py-20 md:py-28">
         <div className="container max-w-8xl">
-          <SectionEyebrow number="02" label="Our Exclusive Line" className="mb-10" />
+          <SectionEyebrow number="02" label="Exclusive Collection" className="mb-10" />
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -104,14 +104,13 @@ export default function BrandedAmenitiesPage() {
             </div>
             <div>
               <p className="font-label text-[11px] tracking-widest2 uppercase text-terracotta-500 mb-4">
-                Exclusive to CV Caltic Baru
+                Distributed exclusively by CV Caltic Baru
               </p>
               <h2 className="headline text-4xl md:text-5xl">Maison Solène.</h2>
               <span className="terracotta-tick mt-6 mb-6" />
               <p className="text-sm md:text-base text-ink-soft leading-relaxed max-w-md">
-                Our own hotel amenities line, created exclusively for CV Caltic Baru. Maison
-                Solène is a signature bath collection with a quiet, editorial look — and it
-                is not sold through any other supplier.
+                The Maison Solène hospitality line brings a quiet, editorial look to the
+                guest bathroom, and is distributed exclusively through CV Caltic Baru.
               </p>
               <div className="mt-8 border-t border-line pt-6 max-w-md">
                 <p className="font-label text-[11px] tracking-widest2 uppercase text-terracotta-500 mb-2">
