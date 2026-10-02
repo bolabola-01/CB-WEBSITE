@@ -17,22 +17,36 @@ export const metadata: Metadata = buildMetadata({
 const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Choose a Collection",
+    title: "Selection",
     description:
-      "Select from our available branded amenity lines, or ask which other collections can be sourced for your market.",
+      "Choose from our available branded amenity lines, or ask which other collections can be sourced for your market.",
   },
   {
     step: "02",
-    title: "Confirm Formats & Volume",
+    title: "Approval",
+    description:
+      "Partner brand collections are submitted to the respective brand for approval before your order moves forward.",
+  },
+  {
+    step: "03",
+    title: "Format & Volume",
     description:
       "We confirm available product formats, dispenser systems, and minimum order quantities against your property's needs.",
   },
   {
-    step: "03",
-    title: "Delivered to Your Property",
+    step: "04",
+    title: "Delivery",
     description:
       "Orders are fulfilled through our distribution network and delivered on a schedule that matches your procurement cycle.",
   },
+];
+
+const MAISON_SOLENE_NOTES = ["Jasmine Sambac", "White Tea", "Sandalwood"];
+const MAISON_SOLENE_RANGE = [
+  "Bath & Shower Gel",
+  "Body Lotion",
+  "Hand & Body Wash",
+  "Soap",
 ];
 
 export default function BrandedAmenitiesPage() {
@@ -69,11 +83,62 @@ export default function BrandedAmenitiesPage() {
         </div>
       </section>
 
+      {/* Maison Solène — Caltic Baru's own exclusive line */}
+      <section className="bg-paper-warm py-20 md:py-28">
+        <div className="container max-w-8xl">
+          <SectionEyebrow number="02" label="Our Exclusive Line" className="mb-10" />
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-16 items-center">
+            <div className="grid grid-cols-2 gap-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/branded-amenities/maison-solene-collection.jpg"
+                alt="Maison Solène soap, bath and shower gel, and body lotion styled on a marble vanity"
+                className="col-span-2 w-full h-72 md:h-96 object-cover"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/branded-amenities/maison-solene-blanche.jpg"
+                alt="Maison Solène Blanche body lotion and hand and body wash with gift boxes"
+                className="col-span-2 w-full h-72 md:h-96 object-cover object-top"
+              />
+            </div>
+            <div>
+              <p className="font-label text-[11px] tracking-widest2 uppercase text-terracotta-500 mb-4">
+                Exclusive to CV Caltic Baru
+              </p>
+              <h2 className="headline text-4xl md:text-5xl">Maison Solène.</h2>
+              <span className="terracotta-tick mt-6 mb-6" />
+              <p className="text-sm md:text-base text-ink-soft leading-relaxed max-w-md">
+                Our own hotel amenities line, created exclusively for CV Caltic Baru. Maison
+                Solène is a signature bath collection with a quiet, editorial look — and it
+                is not sold through any other supplier.
+              </p>
+              <div className="mt-8 border-t border-line pt-6 max-w-md">
+                <p className="font-label text-[11px] tracking-widest2 uppercase text-terracotta-500 mb-2">
+                  Blanche
+                </p>
+                <p className="font-display text-xl text-navy-700 mb-5">
+                  {MAISON_SOLENE_NOTES.join(" · ")}
+                </p>
+                <ul className="grid grid-cols-2 gap-y-2">
+                  {MAISON_SOLENE_RANGE.map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-sm text-ink-soft">
+                      <Check className="h-3.5 w-3.5 text-terracotta-500 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Brand grid */}
       <section className="bg-navy-700 py-20 md:py-28">
         <div className="container max-w-8xl">
           <p className="font-label text-xs tracking-widest2 uppercase text-terracotta-400 mb-8">
-            02 — Available Collections
+            03 — Partner Collections
           </p>
           <h2 className="font-display italic text-3xl md:text-4xl lg:text-5xl text-paper max-w-2xl mb-14">
             Our Current Partner Brands.
@@ -129,9 +194,9 @@ export default function BrandedAmenitiesPage() {
 
       {/* How it works */}
       <section className="container max-w-8xl py-20">
-        <SectionEyebrow number="03" label="How It Works" className="mb-10" />
+        <SectionEyebrow number="04" label="How It Works" className="mb-10" />
         <h2 className="headline text-3xl md:text-4xl mb-10">From Selection to Delivery.</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {HOW_IT_WORKS.map((item) => (
             <div key={item.step} className="card-bordered">
               <p className="font-display text-3xl text-terracotta-500 mb-4">{item.step}</p>
